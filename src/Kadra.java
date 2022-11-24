@@ -1,4 +1,4 @@
-public class Kadra extends Osoba {
+public class Kadra extends Osoba implements IWynagrodzenie {
 
     private String stanowisko;
     private String wyksztalcenie;
@@ -17,5 +17,16 @@ public class Kadra extends Osoba {
         System.out.println("Stanowisko: " + stanowisko);
         System.out.println("Wyksztalcenie: " + wyksztalcenie);
 
+    }
+
+   public void wynagrodzenieDoWyplacenia(int lgodzin, int stawka)
+    {
+        System.out.println("Wynagrodzenie do wypłacenie: " + lgodzin*stawka);
+    }
+
+    @Override
+    public void wynagrodzenieZaNadgodziny(int lgodzin, int stawka)
+    {
+        System.out.println("Wynagrodzenie za nadgodziny: " + lgodzin*(stawka*2));
     }
 }

@@ -1,0 +1,3 @@
+interface IanimalBehavior {
+    void sleep();
+}

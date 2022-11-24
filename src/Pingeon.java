@@ -1,4 +1,4 @@
-public class Pingeon extends Bird{
+public class Pingeon extends Bird implements IanimalBehavior, IAnimalMove{
     private double height;
 
     public Pingeon()
@@ -37,5 +37,14 @@ public class Pingeon extends Bird{
     @Override
     public String toString(){
         return "Blowfish{\nheight: " + height + "\n}" ;
+    }
+    public void sleep()
+    {
+        System.out.print("\nZzz...");
+    }
+    @Override
+    public void move()
+    {
+        System.out.print("\nThe pingeon is walking");
     }
 }

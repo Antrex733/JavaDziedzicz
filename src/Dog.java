@@ -1,4 +1,4 @@
-public class Dog extends Mammal{
+public class Dog extends Mammal implements IanimalBehavior, IAnimalMove{
     private String breed;
 
     public Dog()
@@ -39,5 +39,14 @@ public class Dog extends Mammal{
     @Override
     public String toString(){
         return "Dog{\nbreed: " + breed + "\n}";
+    }
+    public void sleep()
+    {
+        System.out.print("\nZzz...");
+    }
+    @Override
+    public void move()
+    {
+        System.out.print("\nThe dog is running");
     }
 }

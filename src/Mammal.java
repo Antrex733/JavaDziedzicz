@@ -1,4 +1,4 @@
-public class Mammal extends Animal {
+public class Mammal extends Animal implements IAnimalMove{
     protected int liczbakonczyn;
 
     protected Mammal()

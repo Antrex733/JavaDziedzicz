@@ -1,6 +1,6 @@
 import java.time.format.SignStyle;
 
-public class Fish extends Animal{
+public class Fish extends Animal implements IAnimalMove{
     protected String feed;
 
     protected Fish()
@@ -21,6 +21,6 @@ public class Fish extends Animal{
 
     public void WaterType(){}
 
-    protected void getFeed() {this.feed = feed;}
-    protected void setFeed(String feed) {System.out.print(feed);}
+    protected void setFeed(String feed) {this.feed = feed;}
+    protected void getFeed() {System.out.print(feed);}
 }

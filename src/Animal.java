@@ -1,6 +1,6 @@
 import javax.sql.rowset.serial.SerialStruct;
 
-public class Animal {
+abstract class Animal implements IAnimalMove {
 
     protected String name;
     protected int age;
@@ -33,8 +33,6 @@ public class Animal {
     protected void  setName(String name) {this.name = name;}
     protected void setAge(int age) {this.age = age;}
     protected void setWeight(double weight) {this.weight = weight;}
-
-
 
 
 }

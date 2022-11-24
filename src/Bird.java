@@ -1,4 +1,4 @@
-public class Bird extends Animal {
+public class Bird extends Animal implements IAnimalMove {
     protected String featherColor;
 
     protected Bird()

@@ -1,4 +1,4 @@
-public class Blowfish extends Fish {
+public class Blowfish extends Fish implements IanimalBehavior, IAnimalMove {
     private int numberOfSpikes;
 
     public Blowfish()
@@ -38,5 +38,15 @@ public class Blowfish extends Fish {
     @Override
     public String toString(){
         return "Blowfish{\nnumberOfSpikes: " + numberOfSpikes + "\n}";
+    }
+
+    public void sleep()
+    {
+        System.out.print("\nZzz...");
+    }
+    @Override
+    public void move()
+    {
+        System.out.print("\nThe fish is swimming");
     }
 }
