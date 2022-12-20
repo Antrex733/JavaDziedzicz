@@ -2,6 +2,9 @@ public class Main {
     public static void main(String[] args) {
 
         Animal[] animals = new Animal[5];
+        int[] liczba = new int[]{1, 2, 3, 4, 5};
+
+        liczba[2] = 5;
 
         animals[0] = new Blowfish("Rybka", 3, 0.5, "glony");
         animals[1] = new Dog("Piorun", 7, 12.4, "Husky", 4);
